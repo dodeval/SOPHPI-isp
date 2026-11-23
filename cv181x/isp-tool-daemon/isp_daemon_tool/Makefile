@@ -135,7 +135,7 @@ else ifeq "$(TPU_SDK_PATH_EXIST)" "noexist"
 else
 	@cp $(AI_SDK_PATH)/lib/*.so* install/lib/ai -rf
 	@cp $(TPU_SDK_PATH)/lib/*.so* install/lib/ai -rf
-	@rm install/lib/ai/libcvi_rtsp.so
+	#@rm install/lib/ai/libcvi_rtsp.so
 endif
 
 ifeq "$(TDL_SDK_PATH_EXIST)" "noexist"
